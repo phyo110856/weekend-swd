@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Padauk:wght@700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+:root{
+    --primary: #fccde2;
+    --secondary:#88bef5;
+    --danger:#f3558e;
+    --dark:#0e153a;
+    --font-family:'Montserrat', sans-serif;
+}
+*{
+    font-family: 'Roboto','Padauk', sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    line-height: 23px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+body{
+    padding: 20px;
+}
+.box{
+    border: 3px solid gray;
+    padding: 20px ;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.title{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.sub-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.btn-icon{
+    /* width: 40.33px;
+    height: 40.33px; */
+    aspect-ratio: 1;
+    padding: 0;
+}
+.btn-rounded{
+    border-radius: 50%;
+}
+.btn-pill{
+    border-radius: 2px;
+}
+
+/* Button Css */
+.btn{
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+.btn-primary{ 
+    background-color: #fccde2;
+    border: 2px solid #fccde2; 
+}
+.btn-secondary{
+    background-color: #88bef5;
+    border: 2px solid #88bef5;
+}
+.btn-danger{
+    background-color: #f3558e;
+    border: 2px solid #f3558e;
+}
+.btn-dark{
+    background-color: #0e153a;
+    border: 2px solid #0e153a;
+}
+.btn-outline-primary{
+    border:2px solid var(--primary) ;
+    color:var(--primary) ;
+    background-color: transparent;
+}
+.btn-outline-secondary{
+    border:2px solid var(--secondary) ;
+    color:var(--secondary) ;
+    background-color: transparent;
+}
+.btn-outline-danger{
+    border:2px solid var(--danger) ;
+    color:var(--danger) ;
+    background-color: transparent;
+}
+.btn-outline-dark{
+    border:2px solid var(--dark) ;
+    color:var(--dark) ;
+    background-color: transparent;
+}
+
+  /* Table Css */
+
+.table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+.table tr{
+    vertical-align: top;
+}
+
+.table th,td{
+    border: 1px solid black;
+    padding: 10px 20px ;
+}
+.table th{
+    text-align: left;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+.align-top{
+    vertical-align: top;
+}
+.align-middle{
+    vertical-align: middle;
+}
+.align-bottom{
+    vertical-align: bottom;
+}
+
+.table-borderless{
+    border: none;
+}
+.table-borderless th,.table-borderless td{
+    border: none;
+}
+
+.table-strip{
+    border: none;
+}
+.table-strip th,.table-strip td{
+    border: none;
+}
+
+.table-strip tr:nth-child(even){
+    background-color: rgb(203, 205, 206);
+}
+.table-strip thead{
+    background-color: #706f6f;
+    color: white;
+}
+.table tbody tr:hover{
+    background-color: #9a9595 !important;
+}
+
+
+/* Card Ui */
+
+
+.card{
+    border: 2px solid black;
+    /* padding: 20px; */
+    width: 280px;
+    margin-bottom: 20px;
+}
+.card-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card-text{
+    color: #525050;
+}
+.card-img{
+    width: 100%;
+    
+  
+}
+.card-body{
+    padding: 20px;
+}
+.card-rating{
+    margin-bottom: 10px;
+}
+.card-rating p{
+    display: inline-block;
+    color: #706f6f;
+    font-weight: bold;
+    
+}
+.card-rating .stars{
+    display: inline-block;
+}
+.card-rating .stars .fa-star{
+    font-size: 20px;
+    color: rgb(243, 198, 115);
+   
+}
+.card-price{
+    font-size: 15px;
+    color: #646262;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-price span{
+    font-size: 25px;
+    font-weight: bold;
+    color: #3f3e3e;
+}
+.add-to-cart-btn{
+    width: 100%;
+    display: block;
+    border-radius: 0px;
+}
+
+/* Form css */
+
+.form {
+
+}
+.form fieldset{
+width: 450px;
+padding: 40px;
+border: 2px solid var(--dark);
+box-sizing: border-box;
+margin: 0 auto;
+
+}
+.form legend{
+    /* background-color: red; */
+   padding: 0 20px;
+   font-family: var(--font-family);
+   /* font-size: 25px; */
+   font-weight: bold;
+   text-align: center;
+
+
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+.form-label{
+    font-size: 20px;
+    display: block;
+    font-family: var(--font-family);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.form-input{
+    display: block;
+    width: 100%;
+    border: 2px solid var(--dark);
+    box-sizing: border-box;
+    padding:10px;
+    height: 40px;
+
+}
+textarea.form-input{
+    height: 0;
+}
+.form-btn{
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+}
+.form-input:focus-visible{
+    outline: none;
+}

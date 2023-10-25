@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:nth-child(2){
+            background-color: yellow;
+        }
+        .test::before{
+            content: "AAA";
+        }
+        .test::after{
+            content: "ZZZ";
+        }
+        .bg-box{
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: pink;
+            background-image: url("../../assets/images/love.gif"),url("../../assets/images/tree-evergreen-svgrepo-com.svg");
+            background-position:bottom left 110px,bottom;
+            background-repeat: no-repeat,repeat-x;
+            background-size: 60px,100px;
+        }
+        .m-auto{
+            border: 2px solid black;
+            width: 200px;
+            margin: 20px auto;
+        }
+        .position-box{
+            border: 2px solid black;
+            height: 300px;
+            margin: 30px;
+            position: relative;
+
+        }
+        .position-img{
+            width: 100px;
+        }
+        .position-img:nth-child(1){
+            /* position: relative;
+            z-index: 3; */
+            /* top: 30px;
+            left: 50px; */
+            /* bottom: -30px;
+            right: -30px; */
+            /* position: sticky;
+            top: 30px; */
+            position: absolute;
+            top: -50px;
+            /* bottom: 0; */
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .position-img:nth-child(2){
+            filter: grayscale(100%);
+            position: relative;
+            top: 50px;
+            right: 50px;
+            z-index: 2;
+
+        }
+        .position-img:nth-child(3){
+            filter: contrast(200%);
+            position: relative;
+            top: 100px;
+            right: 100px;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="test">
+        My Test
+    </h1>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Banan</li>
+    </ul>
+    <div class="bg-box">
+
+    </div>
+
+    <h1 class="m-auto">
+        Margin Test
+    </h1>
+
+    <div class="position-box">
+        <img class="position-img" src="../../assets/images/poe-mamhe-thar-7.jpg" alt="">
+        <!-- <img class="position-img" src="../../assets/images/poe-mamhe-thar-7.jpg" alt="">
+        <img class="position-img" src="../../assets/images/poe-mamhe-thar-7.jpg" alt=""> -->
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
