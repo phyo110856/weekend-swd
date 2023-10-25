@@ -3,11 +3,22 @@
 }
 .box{
     border: 5px solid black;
-    height: 500px;
+    /* height: 500px; */
+    perspective: 10in;
+    perspective-origin: center;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .poe{
   width: 200px;
-  /* transform: translateX(-60px) translateY(-100px); */
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform-origin: 0% 0%;
+    display: block;
+    /* transform: translateX(-60px) translateY(-100px); */
   /* translate: 10px 300px; */
   /* transform: rotate(-45deg); */
   /* rotate: 10deg; */
@@ -16,5 +27,4 @@
   /* transform: scaleY(2); */
   /* scale: 1.2; */
   /* transform: skewY(4deg); */
-    transform: rotateX(10deg) rotateY(10deg);
 }
