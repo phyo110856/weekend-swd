@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+
+}
+main{
+    padding: 50px;
+}
+.heading{
+    margin-bottom: 50px;
+    animation: ColorChanger 4s linear 1s backwards;
+}
+.box{
+    background-color: rgb(165, 220, 242);
+    margin-bottom: 30px;
+    padding: 50px;
+}
+
+@keyframes ColorChanger{
+    from{
+        color: orangered;
+    }
+    to{
+        color: #333bff;
+    }
+}
